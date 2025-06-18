@@ -24,13 +24,14 @@ st.markdown("### DATA INFO")
 AK = df.shape
 st.write(AK)
 
+
+st.markdown("### Number of eggs from hens in non-organic, free-range farms")
+st.write(df["Number of eggs from hens in non-organic, free-range farms"].describe())
+
+st.markdown("### Number of eggs from hens in non-organic, free-range farms")
+st.write(df["Number of eggs from hens in non-organic, free-range farms"].head(10))
+
 """
-st.markdown("### BLOOD PRESSURE")
-st.write(df["BloodPressure"].describe())
-
-st.markdown("### FIRST TEN BLOOD PRESSURE")
-st.write(df["BloodPressure"].head(10))
-
 #UNIVARIATE ANALYSIS
 st.markdown("### UNIVARIATE ANALYSIS")
 st.markdown("### BLOOD PRESSURE ANALYSIS")
