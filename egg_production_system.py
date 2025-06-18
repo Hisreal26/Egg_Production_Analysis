@@ -72,19 +72,21 @@ st.markdown("### BAR REPRESENTATION FOR EGGS IN ENRICHED CAGE")
 Enriched2 = px.bar(df["Number of eggs from hens in (enriched) cages"], y= "Number of eggs from hens in (enriched) cages", title="EGG PRODUCTION")
 st.plotly_chart(Enriched2, use_container_width=True)
 
+
+st.markdown("### HISTOGRAM REPRESENTATION FOR EGGS IN BARNS")
+Barns = px.histogram(df["Number of eggs from hens in barns"], y ="Number of eggs from hens in barns", title = "EGG PRODUCTION CHART")
+st.plotly_chart(Barns, use_container_width = True)
+
+st.markdown("### LINE GRAPH REPRESENTATION FOR EGGS IN BARNS")
+Barns = px.line(df["Number of eggs from hens in barns"], y ="Number of eggs from hens in barns", title = "EGG PRODUCTION CHART")
+st.plotly_chart(Barns, use_container_width = True)
+
+st.markdown("### BAR REPRESENTATION FOR EGGS IN BARNS")
+Barns = px.bar(df["Number of eggs from hens in barns"], y ="Number of eggs from hens in barns", title = "EGG PRODUCTION CHART")
+st.plotly_chart(Barns, use_container_width = True)
+
+
 """
-st.markdown("### HISTOGRAM REPRESENTATION FOR PREGNANCIES")
-Pregg = px.histogram(df["Pregnancies"], y ="Pregnancies", title = "Pregnancies Distribution")
-st.plotly_chart(Pregg, use_container_width = True)
-
-st.markdown("### LINE GRAPH REPRESENTATION FOR PREGNANCIES")
-Pregg = px.line(df["Pregnancies"], y ="Pregnancies", title = "Pregnancies Distribution")
-st.plotly_chart(Pregg, use_container_width = True)
-
-st.markdown("### BAR REPRESENTATION FOR PREGNANCIES")
-Pregg = px.bar(df["Pregnancies"], y ="Pregnancies", title = "Pregnancies Distribution")
-st.plotly_chart(Pregg, use_container_width = True)
-
 #BIVARIATE ANALYSIS
 st.markdown("## BIVARIATE ANALYSIS")
 st.markdown("### Blood Pressure vs Pregnancies")
