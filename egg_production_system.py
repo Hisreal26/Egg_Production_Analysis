@@ -31,33 +31,34 @@ st.write(df["Number of eggs from hens in non-organic, free-range farms"].describ
 st.markdown("### Number of eggs from hens in non-organic, free-range farms")
 st.write(df["Number of eggs from hens in non-organic, free-range farms"].head(10))
 
-"""
+
 #UNIVARIATE ANALYSIS
 st.markdown("### UNIVARIATE ANALYSIS")
-st.markdown("### BLOOD PRESSURE ANALYSIS")
+st.markdown("### EGG NUMBERS ANALYSIS")
 df = pd.read_csv("egg_production_system.csv")
-st.write(df["BloodPressure"].describe())
+st.write(df["Number of eggs from hens in non-organic, free-range farms"].describe())
 
-st.markdown("### BODY MASS INDEX ANALYSIS")
+st.markdown("### YEAR ANALYSIS")
 df = pd.read_csv("egg_production_system.csv")
-st.write(df["BMI"].describe())
+st.write(df["Year"].describe())
 
-st.markdown("### PREGNANCIES ANALYSIS")
+st.markdown("### Number of eggs from hens in organic, free-range farms ANALYSIS")
 df = pd.read_csv("egg_production_system.csv")
-st.write(df["Pregnancies"].describe())
+st.write(df["Number of eggs from hens in organic, free-range farms"].describe())
 
-st.markdown("### SKIN THICKNESS ANALYSIS")
+st.markdown("### Number of eggs from hens in barns ANALYSIS")
 df = pd.read_csv("egg_production_system.csv")
-st.write(df["SkinThickness"].describe())
+st.write(df["Number of eggs from hens in barns"].describe())
 
-st.markdown("### GLUCOSE ANALYSIS")
+st.markdown("### Number of eggs from hens in (enriched) cages ANALYSIS")
 df = pd.read_csv("egg_production_system.csv")
-st.write(df["Glucose"].describe())
+st.write(df["Number of eggs from hens in (enriched) cages"].describe())
 
-st.markdown("### INSULIN ANALYSIS")
+st.markdown("### CODE ANALYSIS")
 df = pd.read_csv("egg_production_system.csv")
-st.write(df["Insulin"].describe())
+st.write(df["Code"].describe())
 
+"""
 st.markdown("### HISTOGRAM REPRESENTATION FOR BP")
 BP = px.histogram(df["BloodPressure"], y= "BloodPressure", title="Pressure Distribution")
 st.plotly_chart(BP, use_container_width=True)
