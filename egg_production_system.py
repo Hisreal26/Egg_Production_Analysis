@@ -87,6 +87,7 @@ st.plotly_chart(Barns, use_container_width = True)
 
 
 
+
 #BIVARIATE ANALYSIS
 st.markdown("## BIVARIATE ANALYSIS")
 st.markdown("### Year vs Organic eggs")
