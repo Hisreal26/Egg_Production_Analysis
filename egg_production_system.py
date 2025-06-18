@@ -93,6 +93,9 @@ st.markdown("### Year vs Number of eggs from hens in barns")
 df2 = pd.DataFrame(df["Year"],df["Number of eggs from hens in barns"])
 st.write(df2)
 
+
+
+
 """
 st.markdown("### Blood Pressure vs BMI")
 df3 = pd.DataFrame(df["BloodPressure"],df["BMI"])
