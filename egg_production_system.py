@@ -86,13 +86,14 @@ Barns = px.bar(df["Number of eggs from hens in barns"], y ="Number of eggs from 
 st.plotly_chart(Barns, use_container_width = True)
 
 
-"""
+
 #BIVARIATE ANALYSIS
 st.markdown("## BIVARIATE ANALYSIS")
-st.markdown("### Blood Pressure vs Pregnancies")
-df2 = pd.DataFrame(df["BloodPressure"],df["Pregnancies"])
+st.markdown("### Year vs Number of eggs from hens in barns")
+df2 = pd.DataFrame(df["Year"],df["Number of eggs from hens in barns"])
 st.write(df2)
 
+"""
 st.markdown("### Blood Pressure vs BMI")
 df3 = pd.DataFrame(df["BloodPressure"],df["BMI"])
 st.write(df3)
