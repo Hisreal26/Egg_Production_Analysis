@@ -42,15 +42,15 @@ st.markdown("### YEAR ANALYSIS")
 df = pd.read_csv("egg_production_system.csv")
 st.write(df["Year"].describe())
 
-st.markdown("### Number of eggs from hens in organic, free-range farms ANALYSIS")
+st.markdown("### EGGS INORGANIC FREE RANGE ANALYSIS")
 df = pd.read_csv("egg_production_system.csv")
 st.write(df["Number of eggs from hens in organic, free-range farms"].describe())
 
-st.markdown("### Number of eggs from hens in barns ANALYSIS")
+st.markdown("### EGGS IN BARNS ANALYSIS")
 df = pd.read_csv("egg_production_system.csv")
 st.write(df["Number of eggs from hens in barns"].describe())
 
-st.markdown("### Number of eggs from hens in (enriched) cages ANALYSIS")
+st.markdown("### EGGS IN ENRICHED CAGE ANALYSIS")
 df = pd.read_csv("egg_production_system.csv")
 st.write(df["Number of eggs from hens in (enriched) cages"].describe())
 
