@@ -89,9 +89,10 @@ st.plotly_chart(Barns, use_container_width = True)
 
 #BIVARIATE ANALYSIS
 st.markdown("## BIVARIATE ANALYSIS")
-st.markdown("### Year vs Number of eggs from hens in barns")
-df2 = pd.DataFrame(df["Number of eggs from hens in barns"],df["Year"])
-st.write(df2)
+st.markdown("### Year vs Organic Eggs")
+Organic = pd.DataFrame(df["st.write(df["Number of eggs from hens in non-organic, free-range farms"].describe())
+"],df["Year"])
+st.write(Organic)
 
 
 
