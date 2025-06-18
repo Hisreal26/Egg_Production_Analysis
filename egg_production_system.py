@@ -33,7 +33,7 @@ st.write(df["Number of eggs from hens in non-organic, free-range farms"].head(10
 
 
 #UNIVARIATE ANALYSIS
-st.markdown("### UNIVARIATE ANALYSIS")
+st.markdown("# UNIVARIATE ANALYSIS")
 st.markdown("### EGG NUMBERS ANALYSIS")
 df = pd.read_csv("egg_production_system.csv")
 st.write(df["Number of eggs from hens in non-organic, free-range farms"].describe())
