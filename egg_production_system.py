@@ -58,11 +58,12 @@ st.markdown("### CODE ANALYSIS")
 df = pd.read_csv("egg_production_system.csv")
 st.write(df["Code"].describe())
 
-"""
-st.markdown("### HISTOGRAM REPRESENTATION FOR BP")
-BP = px.histogram(df["BloodPressure"], y= "BloodPressure", title="Pressure Distribution")
-st.plotly_chart(BP, use_container_width=True)
+st.markdown("# GRAPHICAL REPRESENTATION")
+st.markdown("### HISTOGRAM REPRESENTATION FOR EGGS IN ENRICHED CAGE")
+Enriched = px.histogram(df["Number of eggs from hens in (enriched) cages"], y= "Number of eggs from hens in (enriched) cages", title="EGG PRODUCTION")
+st.plotly_chart(Enriched, use_container_width=True)
 
+"""
 st.markdown("### LINE GRAPH REPRESENTATION FOR BP")
 BP = px.line(df["BloodPressure"], y= "BloodPressure", title="Pressure Distribution")
 st.plotly_chart(BP, use_container_width=True)
